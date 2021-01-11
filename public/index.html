@@ -19,7 +19,7 @@
     let URL = 'https://www.facebook.com/v9.0/dialog/oauth';
     let options = {
         client_id: '2803422856585534',
-        redirect_uri: 'http://localhost:4000/oauth',
+        redirect_uri: 'http://localhost:4000/oauth' || 'https://facebook-lab12.herokuapp.com/oauth',
         scope: ['email', 'user_friends'].join(','), // comma seperated string
         response_type: 'code',
         auth_type: 'rerequest',

@@ -11,7 +11,7 @@ const userUrl = process.env.userUrl;
 const CLIENT_ID = process.env.CLIENT_ID
 // add it in .env
 const SECRET_ID = process.env.SECRET_ID;
-const API_SERVER = process.env.API_SERVER;
+const API_SERVER = process.env.API_SERVER || 'https://facebook-lab12.herokuapp.com/oauth'
 
 module.exports = async function(req, res, next) {
     // 1. get the code from the query 
