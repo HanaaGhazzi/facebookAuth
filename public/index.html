@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    1. Request a user's GitHub identity
+    GET https://github.com/login/oauth/authorize
+ -->
+
+<head>
+    <title>Auth Test</title>
+</head>
+
+<body>
+    <main>
+        <a id="oauth" href="">Login</a>
+    </main>
+</body>
+<script>
+    
+    let URL = 'https://www.facebook.com/v9.0/dialog/oauth';
+    let options = {
+        client_id: '2803422856585534',
+        redirect_uri: 'http://localhost:4000/oauth',
+        scope: ['email', 'user_friends'].join(','), // comma seperated string
+        response_type: 'code',
+        auth_type: 'rerequest',
+        display: 'popup',
+
+    }
+
+    // url?client_id=value&redirect_uri=value
+    let queryString = Object.keys(options).map((key) => {
+        return `${key}=` + encodeURIComponent(options[key])
+    }).join('&');
+    let authUrl = `${URL}?${queryString}`;
+
+    let link = document.getElementById('oauth');
+    link.setAttribute('href', authUrl);
+
+</script>
+
+
+
+</html>

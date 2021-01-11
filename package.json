@@ -1,0 +1,33 @@
+{
+  "name": "facebookAuth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanaaGhazzi/facebookAuth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanaaGhazzi/facebookAuth/issues"
+  },
+  "homepage": "https://github.com/HanaaGhazzi/facebookAuth#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "base-64": "^1.0.0",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "query-string": "^6.13.8",
+    "superagent": "^6.1.0"
+  }
+}
